@@ -1,9 +1,9 @@
 /**
  * This package (pRigid) provides classes for an easier handling of jBullet in Processing
- * @author Daniel Köhler
+ * @author Daniel Kï¿½hler
  * @version 0.2
  * 
- * Copyright (c) 2012 Daniel Köhler, daniel@lab-eds.org
+ * Copyright (c) 2012 Daniel Kï¿½hler, daniel@lab-eds.org
  * 
  * Java port of Bullet (jBullet) 
  * Copyright (c) 2008 Martin Dvorak <jezek2@advel.cz>
@@ -294,8 +294,8 @@ public class BObject implements BInterface {
 			displayShape.setFill(p5.color(fill.x, fill.y, fill.z));
 			displayShape.setStroke(p5.color(stroke.x, stroke.y, stroke.z));
 			
-			PShape[] shapes = displayShape.getChildren();
-			if (shapes != null) {
+			if (displayShape.getChildCount() > 0) {
+				PShape[] shapes = displayShape.getChildren();
 				for (PShape s : shapes) {
 					s.setFill(true);
 					s.setStroke(true);
@@ -303,8 +303,8 @@ public class BObject implements BInterface {
 					s.setFill(p5.color(fill.x, fill.y, fill.z));
 					s.setStroke(p5.color(stroke.x, stroke.y, stroke.z));
 					
-					PShape[] childs = s.getChildren();
-					if (childs != null) {
+					if (s.getChildCount() > 0) {
+						PShape[] childs = s.getChildren();
 						for (PShape ch : childs) {
 							ch.setFill(true);
 							ch.setStroke(true);
@@ -327,17 +327,17 @@ public class BObject implements BInterface {
 			displayShape.setFill(p5.color(rgb.x, rgb.y, rgb.z));
 			displayShape.setStroke(p5.color(rgb.x, rgb.y, rgb.z));
 			
-			PShape[] shapes = displayShape.getChildren();
-			if (shapes != null) {
+			if (displayShape.getChildCount() > 0) {
+				PShape[] shapes = displayShape.getChildren();
 				for (PShape s : shapes) {
 					s.setFill(fill);
 					s.setStroke(stroke);
 					s.setStrokeWeight(1.1f);	
 					s.setFill(p5.color(rgb.x, rgb.y, rgb.z));
 					s.setStroke(p5.color(rgb.x, rgb.y, rgb.z));
-					
-					PShape[] childs = s.getChildren();
-					if (childs != null) {
+
+					if (s.getChildCount() > 0) {
+						PShape[] childs = s.getChildren();
 						for (PShape ch : childs) {
 							ch.setFill(fill);
 							ch.setStroke(stroke);

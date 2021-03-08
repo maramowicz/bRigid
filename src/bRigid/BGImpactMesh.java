@@ -1,9 +1,9 @@
 /**
  * This package (pRigid) provides classes for an easier handling of jBullet in Processing
- * @author Daniel Köhler
+ * @author Daniel Kï¿½hler
  * @version 0.2
  * 
- * Copyright (c) 2012 Daniel Köhler, daniel@lab-eds.org
+ * Copyright (c) 2012 Daniel Kï¿½hler, daniel@lab-eds.org
  * 
  * Java port of Bullet (jBullet) 
  * Copyright (c) 2008 Martin Dvorak <jezek2@advel.cz>
@@ -36,7 +36,7 @@ import javax.vecmath.Vector3f;
 import processing.core.PApplet;
 import processing.core.PShape;
 import processing.core.PVector;
-import saito.objloader.OBJModel;
+import objloader.OBJModel;
 
 import com.bulletphysics.collision.dispatch.CollisionDispatcher;
 import com.bulletphysics.collision.shapes.CollisionShape;

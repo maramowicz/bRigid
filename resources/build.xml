@@ -171,9 +171,14 @@ ${line}
   		<copy todir="${project.tmp}/${project.name}/src">
   			<fileset dir="${project.src}"/>
 	  	</copy>
-	  	<copy todir="${project.tmp}/${project.name}/${folder}">
-  			<fileset dir="${project.lib}" excludes="README" />
+		<copy todir="${project.tmp}/${project.name}/${folder}">
+  			<fileset file="${project.lib}/vecmath.jar" excludes="README" />
+			<fileset file="${project.lib}/jbullet.jar" excludes="README" />
 	  	</copy>
+		<!-- Uncomment if you need extra libraries in library folder -->
+	  	<!-- <copy todir="${project.tmp}/${project.name}/${folder}">
+  			<fileset dir="${project.lib}" excludes="README" />
+	  	</copy> -->
 	</target>
 	
 	
@@ -381,4 +386,3 @@ ${line}
 	</target>
 	
 </project>
-
