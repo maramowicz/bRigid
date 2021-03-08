@@ -13,4 +13,4 @@ bRigid written by Daniel Koehler - 2013 www.lab-eds.org
 
 Tested Platform: windows 
 Processing: 1.5, 2.01
-Dependencies: jBullet (https://github.com/bubblecloud/jbullet/releases), javax.vecmath (https://mvnrepository.com/artifact/javax.vecmath/vecmath/1.5.2), OBJLoader (https://github.com/taseenb/OBJLoader/releases0)
+Dependencies: jBullet (https://github.com/bubblecloud/jbullet/releases), javax.vecmath (https://mvnrepository.com/artifact/javax.vecmath/vecmath/1.5.2), OBJLoader (https://github.com/taseenb/OBJLoader/releases)
